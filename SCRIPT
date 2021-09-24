@@ -1,5 +1,6 @@
 
 
+local InsertedObjects = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local Button1 = Instance.new("ImageButton")
@@ -33,10 +34,15 @@ local UIGradient_7 = Instance.new("UIGradient")
 local CloseButton = Instance.new("ImageButton")
 local UIGradient_8 = Instance.new("UIGradient")
 local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
-ImageLabel.Parent = game.StarterGui.InsertedObjects
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+InsertedObjects.ResetOnSpawn = false
+
+ImageLabel.Parent = InsertedObjects
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.Position = UDim2.new(0.0394712277, 0, 0.104501605, 0)
@@ -316,9 +322,16 @@ UIGradient_8.Parent = CloseButton
 UIAspectRatioConstraint_8.Parent = CloseButton
 UIAspectRatioConstraint_8.AspectRatio = 2.000
 
+ImageButton.Parent = InsertedObjects
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.416326493, 0, 0, 0)
+ImageButton.Size = UDim2.new(0, 123, 0, 60)
+ImageButton.Image = "http://www.roblox.com/asset/?id=7529900564"
+
 -- Scripts:
 
-local function BBUVJJ_fake_script() -- ImageLabel.LocalScript 
+local function XGAPUV_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -396,8 +409,8 @@ local function BBUVJJ_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(BBUVJJ_fake_script)()
-local function MLXHUG_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(XGAPUV_fake_script)()
+local function QBERNNJ_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -415,8 +428,8 @@ local function MLXHUG_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(MLXHUG_fake_script)()
-local function QJOYX_fake_script() -- Button1.ANIME 
+coroutine.wrap(QBERNNJ_fake_script)()
+local function SCIFH_fake_script() -- Button1.ANIME 
 	local script = Instance.new('LocalScript', Button1)
 
 	local btn = script.Parent
@@ -459,8 +472,8 @@ local function QJOYX_fake_script() -- Button1.ANIME
 		end
 	end)
 end
-coroutine.wrap(QJOYX_fake_script)()
-local function VRFHELS_fake_script() -- Button1.METAB SCRIPT 
+coroutine.wrap(SCIFH_fake_script)()
+local function SJTR_fake_script() -- Button1.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button1)
 
 	
@@ -478,8 +491,8 @@ local function VRFHELS_fake_script() -- Button1.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(VRFHELS_fake_script)()
-local function QUKCZUU_fake_script() -- Button2.Button7Script 
+coroutine.wrap(SJTR_fake_script)()
+local function EBNQKL_fake_script() -- Button2.Button7Script 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -522,8 +535,8 @@ local function QUKCZUU_fake_script() -- Button2.Button7Script
 		end
 	end)
 end
-coroutine.wrap(QUKCZUU_fake_script)()
-local function XFQF_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(EBNQKL_fake_script)()
+local function IBNQOA_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	
@@ -551,8 +564,8 @@ local function XFQF_fake_script() -- Button2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(XFQF_fake_script)()
-local function GBHWU_fake_script() -- Button3.ANIME 
+coroutine.wrap(IBNQOA_fake_script)()
+local function OGSLIAU_fake_script() -- Button3.ANIME 
 	local script = Instance.new('LocalScript', Button3)
 
 	local btn = script.Parent
@@ -595,8 +608,8 @@ local function GBHWU_fake_script() -- Button3.ANIME
 		end
 	end)
 end
-coroutine.wrap(GBHWU_fake_script)()
-local function DERO_fake_script() -- Button3_2.ANIME 
+coroutine.wrap(OGSLIAU_fake_script)()
+local function CLNHYVL_fake_script() -- Button3_2.ANIME 
 	local script = Instance.new('LocalScript', Button3_2)
 
 	local btn = script.Parent
@@ -639,8 +652,8 @@ local function DERO_fake_script() -- Button3_2.ANIME
 		end
 	end)
 end
-coroutine.wrap(DERO_fake_script)()
-local function OHHMC_fake_script() -- Button3_2.METAB SCRIPT 
+coroutine.wrap(CLNHYVL_fake_script)()
+local function IJGL_fake_script() -- Button3_2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3_2)
 
 	
@@ -655,8 +668,8 @@ local function OHHMC_fake_script() -- Button3_2.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(OHHMC_fake_script)()
-local function KRZUAJD_fake_script() -- Button3.METAB SCRIPT 
+coroutine.wrap(IJGL_fake_script)()
+local function FGYG_fake_script() -- Button3.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3)
 
 	
@@ -675,8 +688,8 @@ local function KRZUAJD_fake_script() -- Button3.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(KRZUAJD_fake_script)()
-local function FTRXMR_fake_script() -- Button3_3.ANIME 
+coroutine.wrap(FGYG_fake_script)()
+local function EOVLP_fake_script() -- Button3_3.ANIME 
 	local script = Instance.new('LocalScript', Button3_3)
 
 	local btn = script.Parent
@@ -719,8 +732,8 @@ local function FTRXMR_fake_script() -- Button3_3.ANIME
 		end
 	end)
 end
-coroutine.wrap(FTRXMR_fake_script)()
-local function FABBDDU_fake_script() -- Button3_3.METAB SCRIPT 
+coroutine.wrap(EOVLP_fake_script)()
+local function SBHQX_fake_script() -- Button3_3.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3_3)
 
 	
@@ -809,8 +822,8 @@ local function FABBDDU_fake_script() -- Button3_3.METAB SCRIPT
 		end)
 	
 end
-coroutine.wrap(FABBDDU_fake_script)()
-local function RQBM_fake_script() -- Button3_4.ANIME 
+coroutine.wrap(SBHQX_fake_script)()
+local function WBZBO_fake_script() -- Button3_4.ANIME 
 	local script = Instance.new('LocalScript', Button3_4)
 
 	local btn = script.Parent
@@ -853,8 +866,8 @@ local function RQBM_fake_script() -- Button3_4.ANIME
 		end
 	end)
 end
-coroutine.wrap(RQBM_fake_script)()
-local function PWFFG_fake_script() -- Button3_4.METAB SCRIPT 
+coroutine.wrap(WBZBO_fake_script)()
+local function RPJNBR_fake_script() -- Button3_4.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3_4)
 
 	
@@ -943,8 +956,8 @@ local function PWFFG_fake_script() -- Button3_4.METAB SCRIPT
 		end)
 	
 end
-coroutine.wrap(PWFFG_fake_script)()
-local function UPIYL_fake_script() -- Button3_5.ANIME 
+coroutine.wrap(RPJNBR_fake_script)()
+local function HRUMMDK_fake_script() -- Button3_5.ANIME 
 	local script = Instance.new('LocalScript', Button3_5)
 
 	local btn = script.Parent
@@ -987,8 +1000,8 @@ local function UPIYL_fake_script() -- Button3_5.ANIME
 		end
 	end)
 end
-coroutine.wrap(UPIYL_fake_script)()
-local function WEAM_fake_script() -- Button3_5.METAB SCRIPT 
+coroutine.wrap(HRUMMDK_fake_script)()
+local function ZQFA_fake_script() -- Button3_5.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button3_5)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1002,16 +1015,16 @@ local function WEAM_fake_script() -- Button3_5.METAB SCRIPT
 	
 	
 end
-coroutine.wrap(WEAM_fake_script)()
-local function FLJBWLU_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(ZQFA_fake_script)()
+local function WUDWNEP_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(FLJBWLU_fake_script)()
-local function QQNTN_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(WUDWNEP_fake_script)()
+local function ZKNPSF_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -1054,4 +1067,13 @@ local function QQNTN_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(QQNTN_fake_script)()
+coroutine.wrap(ZKNPSF_fake_script)()
+local function ZLTQ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.ImageLabel.Visible = not script.Parent.Parent.ImageLabel.Visible
+	end)
+	
+end
+coroutine.wrap(ZLTQ_fake_script)()
